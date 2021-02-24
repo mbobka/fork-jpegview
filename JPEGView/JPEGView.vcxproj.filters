@@ -508,6 +508,7 @@
     <None Include="res\JPEGView.ico">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="JPEGView.rc">
