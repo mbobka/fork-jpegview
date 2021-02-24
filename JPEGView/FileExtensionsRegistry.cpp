@@ -208,7 +208,7 @@ static void RegisterInMRU(LPCTSTR sRegMRUPath) {
 		}
 	}
 	// append another entry to the MRU list with JPEGView.exe
-	CString nextMRUEntry = CString(mruList.GetAt(mruList.GetLength() - 1) + 1);
+	CString nextMRUEntry = CString(wchar_t(mruList.GetAt(mruList.GetLength() - 1) + 1));
 	if (nextMRUEntry.GetAt(0) <= _T('z') && SetRegistryStringValue(key, _T("MRUList"), mruList + nextMRUEntry)) {
 		SetRegistryStringValue(key, nextMRUEntry, _T("JPEGView.exe"));
 	}
